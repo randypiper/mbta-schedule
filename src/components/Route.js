@@ -2,7 +2,7 @@ import Moment from 'moment';
 import React from 'react';
 
 function getTime(prediction) {
-	return prediction.attributes.arrival_time || prediction.attributes.departure_time;
+	return prediction.attributes.arrival_time || prediction.attributes.departure_time || '';
 }
 
 function predictionTimeSorter(a, b) {
